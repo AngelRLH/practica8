@@ -1,0 +1,110 @@
+<!-- 
+  Autor: Lopez Hernandez Angel Roman
+  Fecha: 01/10/2026
+  Materia: Programacion Web
+  Practica 4 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- Enlaces de conexion con Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Enlace con las fuentes Isometra y Oswald combinadas -->
+  <link href="https://fonts.googleapis.com/css2?family=Isometra&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  
+  <!-- Enlace a la hoja de estilos externa -->
+  <link rel="stylesheet" href="general.css">
+</head>
+<body>
+  <!-- Contenedor centrado para la vista de la pagina -->
+  <center>
+    <h3>Formulario de registro</h3>
+    <h4>Reservaciones</h4>
+    <h3>Lopez Hernandez Angel Roman</h3>
+
+    <!-- Formulario estructurado con tabla para alinear las cajas -->
+    <form>
+      <table>
+        <!-- Fila para ingresar el nombre -->
+        <tr>
+          <td>ingresa tu nombre</td>
+          <td><input type="text" name="nombre"></td>
+        </tr>
+
+        <!-- Fila para ingresar los apellidos -->
+        <tr>
+          <td>ingresa tu apellidos</td>
+          <td><input type="text" name="apellidos"></td>
+        </tr>
+
+        <!-- Fila para ingresar la edad -->
+        <tr>
+          <td>ingresa tu edad</td>
+          <td><input type="number" name="edad"></td>
+        </tr>
+
+        <!-- Fila para ingresar el correo -->
+        <tr>
+          <td>ingresa tu correo e.</td>
+          <td><input type="email" name="correo"></td>
+        </tr>
+
+        <!-- Fila para ingresar la contrasena -->
+        <tr>
+          <td>ingresa tu contrasena</td>
+          <td><input type="password" name="contrasena"></td>
+        </tr>
+
+        <!-- Fila con opciones de radio para seleccionar genero -->
+        <tr>
+          <td>ingresa tu genero</td>
+          <td>
+            <input type="radio" name="genero" value="masculino">masculino
+            <input type="radio" name="genero" value="femenino">femenino
+          </td>
+        </tr>
+
+        <!-- Fila con casillas de verificacion para temas de interes -->
+        <tr>
+          <td>ingresa temas de interes</td>
+          <td>
+            <input type="checkbox" name="pasatiempo" value="computacion">computacion
+            <input type="checkbox" name="pasatiempo" value="juegos">juegos
+            <input type="checkbox" name="pasatiempo" value="valorant">valorant
+            <input type="checkbox" name="pasatiempo" value="viajes">viajes
+          </td>
+        </tr>
+
+        <!-- Fila con lista desplegable para estado civil -->
+        <tr>
+          <td>ingresa tu estado civil</td>
+          <td>
+            <select name="ed_civil">
+              <option value="casado">casado/a</option>
+              <option value="soltero">soltero/a</option>
+              <option value="divorciado">divorciado/a</option>
+            </select>
+          </td>
+        </tr>
+
+        <!-- Fila con caja de texto para comentarios -->
+        <tr>
+          <td>algun comentario</td>
+          <td><textarea name="comentarios"></textarea></td>
+        </tr>
+      </table>
+
+      <br>
+      <!-- Boton para enviar los datos -->
+      <input type="submit" value="Enviar Datos">
+    </form>
+  </center>
+</body>
+</html>

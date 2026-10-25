@@ -1,0 +1,63 @@
+/* 
+  Autor: Lopez Hernandez Angel Roman
+  Fecha: 01/10/2026
+  Materia: Programacion Web
+  Practica 4 
+*/
+
+/* Titulos h3 con color rojo y fuente Oswald */
+h3 {
+  color: red;
+  font-size: 50px;
+  font-family: 'Oswald';
+}
+
+/* Barra de reservaciones con borde y fondo azul */
+h4 {
+  color: burlywood;
+  font-size: 50px;
+  font-family: 'Isometra';
+  border: 3px solid red;
+  background-color: blue;
+}
+
+/* Texto de la tabla con color azul claro y alineado a la izquierda */
+table {
+  color: cornflowerblue;
+  font-size: 15px;
+  font-family: 'Isometra';
+  text-align: left;
+}
+
+/* Espacio entre los renglones de la tabla */
+td {
+  padding: 8px;
+}
+
+/* Ancho y color calido de fondo para las cajas de texto */
+select,
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+  width: 350px;
+  background-color: #fcefdc;
+  color: #000;
+  border-radius: 2px;
+  border: 1px solid #c9b08f;
+}
+
+/* Estilo del boton de enviar */
+input[type="submit"] {
+  background-color: #00b3ff;
+  padding: 7px 15px;
+  border-radius: 10px;
+  border: none;
+}
+
+/* Color amarillo para casillas y botones de radio */
+input[type="checkbox"],
+input[type="radio"] {
+  accent-color: yellow;
+}

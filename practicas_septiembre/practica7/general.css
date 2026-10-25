@@ -1,0 +1,270 @@
+/* 
+  Autor: Lopez Hernandez Angel Roman
+  Fecha: 02/10/2026
+  Materia: Programacion Web
+  Practica 5 - Estilo Neon Dark Tech
+*/
+
+/* Reset básico */
+* {
+  box-sizing: border-box;
+}
+
+/* 3ra tipografía: Cuerpo y textos generales (Inter) */
+body, table, input, textarea, button {
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #161b26 0%, #0a0d14 100%);
+  color: #e2e8f0;
+  margin: 0;
+  padding: 40px 15px;
+  min-height: 100vh;
+}
+
+/* 1ra tipografía: Título principal (Orbitron - estilo futurista/tech) */
+h1 {
+  font-family: 'Orbitron', sans-serif;
+  color: #38bdf8; /* Azul cyan neón */
+  font-size: 38px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  text-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+}
+
+h3 {
+  font-family: 'Orbitron', sans-serif;
+  color: #a855f7; /* Púrpura neón */
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin: 4px;
+}
+
+/* 2da tipografía: Subtítulo con tu nombre (Fira Code - estilo código/mono) */
+h4 {
+  font-family: 'Fira Code', monospace;
+  color: #34d399; /* Verde esmeralda neón */
+  font-size: 20px;
+  margin-top: 6px;
+  font-weight: 500;
+}
+
+/* ===================================================
+   TABLA DE IAs
+   =================================================== */
+
+.tabla-ia {
+  width: 92%;
+  max-width: 980px;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 30px;
+  background-color: #111827;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #1f2937;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+}
+
+/* Encabezados */
+.tabla-ia th {
+  padding: 16px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.tabla-ia th.col-gpt {
+  background-color: #064e3b; /* Verde bosque profundo */
+  color: #6ee7b7;
+  border-bottom: 2px solid #10b981;
+}
+
+.tabla-ia th.col-gemini {
+  background-color: #1e1b4b; /* Azul índigo profundo */
+  color: #93c5fd;
+  border-bottom: 2px solid #3b82f6;
+}
+
+.tabla-ia th.col-copilot {
+  background-color: #4a044e; /* Púrpura vino profundo */
+  color: #f0abfc;
+  border-bottom: 2px solid #d946ef;
+}
+
+/* Celdas generales */
+.tabla-ia td {
+  width: 33.33%;
+  vertical-align: top;
+  padding: 20px;
+  border: 1px solid #1e293b;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Fila de logos: fondo oscuro contrastante y tarjetas con borde suave */
+.fila-logos td {
+  background-color: #0f172a !important;
+  padding: 25px 10px;
+}
+
+.fila-logos img {
+  border-radius: 12px;
+  background-color: #ffffff;
+  padding: 8px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+}
+
+/* Celdas por columna */
+td.col-gpt {
+  background-color: #062e24;
+  color: #d1fae5;
+}
+
+td.col-gemini {
+  background-color: #0f172a;
+  color: #e0f2fe;
+}
+
+td.col-copilot {
+  background-color: #2e0836;
+  color: #fae8ff;
+}
+
+/* Enlaces */
+.tabla-ia a {
+  color: #38bdf8;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px dashed #38bdf8;
+  transition: all 0.2s ease;
+}
+
+.tabla-ia a:hover {
+  color: #7dd3fc;
+  border-bottom-style: solid;
+}
+
+/* Botón inferior "¿Desea más información?" */
+.enlace-info {
+  margin-top: 35px;
+}
+
+.enlace-info a {
+  display: inline-block;
+  background: linear-gradient(135deg, #0284c7, #2563eb);
+  color: #ffffff;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  padding: 12px 28px;
+  border-radius: 30px;
+  box-shadow: 0 0 20px rgba(37, 99, 235, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.enlace-info a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 25px rgba(37, 99, 235, 0.7);
+}
+
+/* ===================================================
+   PÁGINA 2: contacto.html
+   =================================================== */
+
+.tarjeta-formulario {
+  background-color: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 16px;
+  padding: 35px 40px;
+  max-width: 580px;
+  margin-top: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+}
+
+.tabla-formulario {
+  border-collapse: separate;
+  border-spacing: 12px;
+  width: 100%;
+}
+
+.tabla-formulario td {
+  font-size: 15px;
+  color: #94a3b8;
+}
+
+.tabla-formulario td:first-child {
+  text-align: right;
+  font-weight: 600;
+  color: #38bdf8;
+  width: 35%;
+}
+
+.tabla-formulario td:last-child {
+  text-align: left;
+}
+
+/* Entradas del formulario */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  max-width: 320px;
+  background-color: #0b0f19;
+  color: #f1f5f9;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.3);
+}
+
+/* Botones de acción */
+.btn-submit {
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: #ffffff;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 13px;
+  letter-spacing: 1px;
+  padding: 10px 24px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(16, 185, 129, 0.3);
+  margin-left: 8px;
+}
+
+.btn-submit:hover {
+  filter: brightness(1.1);
+}
+
+.btn-volver {
+  display: inline-block;
+  background-color: transparent;
+  color: #94a3b8;
+  font-family: 'Fira Code', monospace;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 8px 18px;
+  border: 1px solid #334155;
+  border-radius: 20px;
+  transition: all 0.2s ease;
+}
+
+.btn-volver:hover {
+  color: #f8fafc;
+  border-color: #64748b;
+}

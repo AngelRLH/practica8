@@ -1,0 +1,98 @@
+/* 
+  Autor: Lopez Hernandez Angel Roman
+  Fecha: 02/10/2026
+  Materia: Programacion Web
+  Practica 5 
+*/
+
+/* 1ra tipografia: Titulo principal */
+h1 {
+  font-family: 'Oswald', sans-serif;
+  color: #1a237e;
+  font-size: 42px;
+  margin-bottom: 5px;
+}
+
+h3 {
+  font-family: 'Oswald', sans-serif;
+  color: red;
+  font-size: 26px;
+  margin: 5px;
+}
+
+/* 2da tipografia: Subtitulo con tu nombre */
+h4 {
+  font-family: 'Isometra', sans-serif;
+  color: #d84315;
+  font-size: 28px;
+  margin-top: 5px;
+}
+
+/* Nombres de las IAs dentro de la tabla */
+h2 {
+  font-family: 'Oswald', sans-serif;
+  color: #0d47a1;
+  font-size: 24px;
+}
+
+/* 3ra tipografia: Textos de contenido, tablas y formularios */
+body, table, input, textarea {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Estructura de la tabla de 3 columnas */
+.tabla-ia {
+  width: 90%;
+  border-collapse: collapse;
+  border: 2px solid #333;
+  margin-top: 20px;
+}
+
+.tabla-ia td {
+  width: 33.33%;
+  vertical-align: top;
+  padding: 18px;
+  text-align: center;
+  background-color: #fafafa;
+}
+
+.tabla-ia p {
+  font-size: 14px;
+  color: #444;
+  text-align: justify;
+}
+
+/* Cajas del formulario de la pagina 2 */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 320px;
+  background-color: #fcefdc;
+  color: #000;
+  border-radius: 4px;
+  border: 1px solid #c9b08f;
+  padding: 6px;
+}
+
+/* Boton de envio */
+input[type="submit"] {
+  background-color: #00b3ff;
+  color: #fff;
+  font-weight: bold;
+  padding: 8px 22px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilo del enlace de mas informacion con asterisco */
+.enlace-info {
+  font-family: 'Oswald', sans-serif;
+  font-size: 22px;
+  color: #d32f2f;
+}
+
+.enlace-info a {
+  color: #0d47a1;
+  text-decoration: underline;
+}

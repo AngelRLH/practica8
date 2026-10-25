@@ -1,0 +1,74 @@
+<!--
+    ==================================================
+    PROYECTO: Sitio Web Personal - Practica 8
+    AUTOR: Angel Roman Lopez Hernandez
+    CARRERA: Ingenieria en Sistemas Computacionales
+    INSTITUCION: TecNM Campus Acapulco
+    MATERIA: Programacion Web
+    FECHA: 25 de Octubre 2026
+    DESCRIPCION: Estructura principal con navegacion superior e iframe para la carga dinamica de secciones.
+    ==================================================
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+    <!-- DOCUMENTACION: Estilos para el encabezado claro con acento en color rojo/rosa suave -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #2b2b2b;
+            font-family: Arial, sans-serif;
+        }
+        .header-table {
+            background-color: #f9b7b7;
+            border-bottom: 2px solid #e63946;
+        }
+        a {
+            color: #2b2b2b;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.2s;
+        }
+        a:hover {
+            color: #e63946;
+        }
+        .separator {
+            color: #e63946;
+            margin: 0 8px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado con fondo claro y bordes elegantes -->
+    <table class="header-table" width="100%" border="0" cellpadding="12" cellspacing="0">
+        <tr>
+            <td width="15%" align="left">
+                <img src="LOGOs/Ajpeg.jpeg" alt="Logo" height="50">
+            </td>
+            <td width="70%" align="center">
+                <nav>
+                    <a href="inicio.html" target="miFrame">Inicio</a> <span class="separator">|</span> 
+                    <a href="acercademi.html" target="miFrame">Acerca de mi</a> <span class="separator">|</span> 
+                    <a href="portafolio.html" target="miFrame">Portafolio</a> <span class="separator">|</span> 
+                    <a href="contacto.html" target="miFrame">Contacto</a>
+                </nav>
+            </td>
+            <td width="15%"></td>
+        </tr>
+    </table>
+
+    <!-- Marco donde se cargan las secciones -->
+    <div align="center">
+        <iframe name="miFrame" src="inicio.html" width="100%" height="650px" frameborder="0"></iframe>
+    </div>
+
+</body>
+</html>

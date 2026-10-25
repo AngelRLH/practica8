@@ -1,0 +1,52 @@
+<!-- 
+  Autor: Lopez Hernandez Angel Roman
+  Fecha: 02/10/2026
+  Materia: Programacion Web
+  Practica 5 
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solicitud de Informacion</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600&family=Orbitron:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="general.css">
+</head>
+<body>
+  <center>
+    <h1>Solicitud de Información</h1>
+    <h4>&lt; Lopez Hernandez Angel Roman /&gt;</h4>
+
+    <div class="tarjeta-formulario">
+      <form>
+        <table class="tabla-formulario">
+          <tr>
+            <td>Nombre:</td>
+            <td><input type="text" name="nombre" placeholder="Ingresa tu nombre completo" required></td>
+          </tr>
+
+          <tr>
+            <td>Correo electrónico:</td>
+            <td><input type="email" name="correo" placeholder="ejemplo@correo.com" required></td>
+          </tr>
+
+          <tr>
+            <td>Mensaje:</td>
+            <td><textarea name="informacion" rows="4" placeholder="Escribe aquí tus dudas..."></textarea></td>
+          </tr>
+        </table>
+
+        <br>
+        <a href="index.html" class="btn-volver">← Regresar</a>
+        <input type="submit" value="Enviar Solicitud" class="btn-submit">
+      </form>
+    </div>
+  </center>
+</body>
+</html>

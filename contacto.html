@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    
+    <!-- DOCUMENTACION: Estilos CSS con paleta neutra en tonos oscuros -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            color: #222222;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #1a1a1a;
+            border-bottom: 2px solid #333333;
+            padding-bottom: 5px;
+        }
+        p {
+            line-height: 1.5;
+            font-size: 15px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        td {
+            padding: 15px;
+            vertical-align: top;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 95%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: Arial, sans-serif;
+        }
+        input[type="submit"] {
+            background-color: #222222;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        input[type="submit"]:hover {
+            background-color: #444444;
+        }
+        .box-info {
+            background-color: #ffffff;
+            border: 1px solid #dddddd;
+            padding: 15px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- DOCUMENTACION: Encabezado principal -->
+    <h1>Medios de Contacto</h1>
+    <p>Si deseas comunicarte conmigo para proyectos, dudas o colaboraciones, puedes enviarme un mensaje mediante el formulario o por mis redes.</p>
+
+    <!-- DOCUMENTACION: Estructura en dos columnas (Formulario activo e Informacion personal) -->
+    <table border="0">
+        <tr>
+            <!-- Columna 1: Formulario conectado con Formspree -->
+            <td width="60%">
+                <div class="box-info">
+                    <h3>Enviami un mensaje</h3>
+                    <form action="https://formspree.io/f/angelhernandezrl25@gmail.com" method="POST">
+                        <label for="nombre">Nombre completo:</label><br>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre..." required><br>
+
+                        <label for="correo">Correo electronico:</label><br>
+                        <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required><br>
+
+                        <label for="mensaje">Mensaje:</label><br>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aqui..." required></textarea><br>
+
+                        <input type="submit" value="Enviar Mensaje">
+                    </form>
+                </div>
+            </td>
+
+            <!-- Columna 2: Datos directos actualizados -->
+            <td width="40%">
+                <div class="box-info">
+                    <h3>Informacion Directa</h3>
+                    <p><b>Ubicacion:</b> Acapulco, Guerrero, Mexico</p>
+                    <p><b>Institucion:</b> TecNM Campus Acapulco</p>
+                    <p><b>Carrera:</b> Ingenieria en Sistemas Computacionales</p>
+                    <hr>
+                    <p><b>Redes & Plataformas:</b></p>
+                    <ul>
+                        <li><b>Email:</b> angelhernandezrl25@gmail.com</li>
+                        <li><b>GitHub:</b> github.com/AngelRLH</li>
+                        <li><b>LinkedIn:</b> linkedin.com/in/AngelRLH</li>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!-- 
+  Autor: Lopez Hernandez Angel Roman
+  Fecha: 02/10/2026
+  Materia: Programacion Web
+  Practica 5 
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solicitud de Informacion</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Isometra&family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="general.css">
+</head>
+<body>
+  <center>
+    <h1>Solicitud de Mas Informacion</h1>
+    <h4>Lopez Hernandez Angel Roman</h4>
+
+    <form>
+      <table>
+        <!-- Campo Nombre -->
+        <tr>
+          <td>Nombre:</td>
+          <td><input type="text" name="nombre" required></td>
+        </tr>
+
+        <!-- Campo Correo -->
+        <tr>
+          <td>Su correo:</td>
+          <td><input type="email" name="correo" required></td>
+        </tr>
+
+        <!-- Campo Informacion -->
+        <tr>
+          <td>Informacion:</td>
+          <td><textarea name="informacion" rows="5"></textarea></td>
+        </tr>
+      </table>
+
+      <br>
+      <input type="submit" value="Enviar">
+    </form>
+
+    <br>
+    <a href="index.html">Regresar a la pagina principal</a>
+  </center>
+</body>
+</html>
